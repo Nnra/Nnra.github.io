@@ -65,6 +65,17 @@
   text-align: center;
 }
 
+#open-popup-CV {padding:0px}
+.white-popup {
+  position: relative;
+  background: #FFF;
+  width: auto;
+  max-width: 200px;
+  margin: 20px auto;
+  padding: 40px;
+  text-align: center;
+}
+
 </style>
 
 	</head>
@@ -103,8 +114,8 @@
 							<h1 class="animate-box"><span class="big">Enthusiastic</span> <br><span style="position:relative">about learning new technology</span> <br><span class="medium">Explore</span><br><span>every posibility to</span> <br> <span class="medium">Empower</span><br><span>every person to achieve more.</span></h1>
 							<h2 class="animate-box">Music can change the people who can change the world.</h2>
 							<div class="call-to-action">
-								<a href="#" class="demo animate-box"><i class="icon-power"></i> Contact</a>
-								<a href="#" class="download animate-box"><i class="icon-download"></i> Download CV</a>
+								<a href="https://www.linkedin.com/in/nura-wu-484862166/" class="demo animate-box"><i class="icon-power"></i>LinkedIn</a>
+								<a class="download animate-box" id="open-popup-CV"><i class="icon-download"></i> Download CV</a>
 							</div>
 						</div>
 					</div>
@@ -112,6 +123,22 @@
 			</div>
 		</div>
 	</section>
+
+	<script>
+	//popup box
+	$('#open-popup-CV').magnificPopup({
+		items: [
+		{
+			src: 'https://drive.google.com/file/d/1ijuKCMpAISuNmqNk0F5KeVQbzMdP7oY2/preview',
+			type: 'iframe' // this overrides default type
+		},
+		],
+		gallery: {
+			enabled: true
+		},
+		type: 'image' // this is a default type
+	});
+	</script>
 
 	<section id="fh5co-services" data-section="services">
 		<div class="fh5co-services">
