@@ -39,14 +39,33 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<!-- Style -->
 	<link rel="stylesheet" href="css/style.css">
-
-
+	<!-- Magnific Popup core CSS file -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<!-- Magnific Popup core JS file -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"></script>
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+
+<style>
+#open-popup {padding:0px}
+.white-popup {
+  position: relative;
+  background: #FFF;
+  width: auto;
+  max-width: 200px;
+  margin: 20px auto;
+  padding: 40px;
+  text-align: center;
+}
+
+</style>
 
 	</head>
 	<body>
@@ -64,7 +83,7 @@
 							<li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
 							<li><a href="#" data-nav-section="services"><span>Experience</span></a></li>
 							<li><a href="#" data-nav-section="explore"><span>Portfolio</span></a></li>
-							<li><a href="#" data-nav-section="testimony"><span>Feedback</span></a></li>
+							<!-- <li><a href="#" data-nav-section="testimony"><span>Feedback</span></a></li>-->
 							<li><a href="#" data-nav-section="pricing"><span>Skill</span></a></li>
 							<!-- <li><a href="#" data-nav-section="blog"><span>Blog</span></a></li>-->
 						</ul>
@@ -98,7 +117,7 @@
 		<div class="fh5co-services">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4 text-center">
+					<div class="col-md-6 text-center">
 						<div class="box-services">
 							<div class="icon animate-box">
 									<span><i class="icon-energy" style="background-image: url(https://www.nchu.edu.tw/upfile/editor/images/nchu/NCHU_Badge.jpg);background-size:100%"></i></i></span>
@@ -119,7 +138,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4 text-center">
+					<div class="col-md-6 text-center">
 						<div class="box-services">
 							<div class="icon animate-box">
 								<span><i class="icon" style="background-image: url(https://media.licdn.com/dms/image/C4D0BAQEko6uLz7XylA/company-logo_200_200/0?e=2159024400&v=beta&t=a1kve4i0YyusChyNR_Cvvn2vnHNUHhZ4H2rnYCxjQhU);background-size:100%"></i></span>
@@ -140,28 +159,6 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4 text-center">
-						<div class="box-services">
-							<div class="icon animate-box">
-								<span><i class="icon-people"></i></span>
-							</div>
-							<div class="fh5co-post animate-box">
-								<h3>To Be Graduate Student</h3>
-								<p>My next step is to learn more about machine learning techology, to combine with the music engineering.</p>
-							</div>
-						</div>
-
-						<div class="box-services">
-							<div class="icon animate-box">
-								<span><i class="icon-screen-desktop"></i></span>
-							</div>
-							<div class="fh5co-post animate-box">
-								<h3>Future</h3>
-								<p>I will become an AI engineer focusing in music industry.</p>
-							</div>
-						</div>
-					</div>
-					
 				</div>
 			</div>
 		</div>
@@ -183,58 +180,88 @@
 		<div class="fh5co-project">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-6">
 						<div class="fh5co-portfolio animate-box">
 							<a href="#">
 								<div class="portfolio-entry" style="background-image: url(images/portfolio-1.jpg);">
 									<div class="desc">
-										<p>Project 1</p>
+										<p>Spotify music recommendation by mood with Chatbot</p>
 									</div>
 								</div>
 								<div class="portfolio-text text-center">
-									<h3>Project 1</h3>
+									<h3>Music recommendation by mood</h3>
 									<ul class="stuff">
-										<li><i class="icon-heart2"></i>200</li>
-										<li><i class="icon-eye2"></i>248</li>
-										<li><i class="icon-download"></i>240</li>
+										<li><i class="icon-eye2"></i>View</li>
+										<li><i class="icon-download"></i>Download</li>
 									</ul>
 								</div> 
 							</a>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+					<div class="col-md-6">
 						<div class="fh5co-portfolio animate-box">
 							<a href="#">
-								<div class="portfolio-entry" style="background-image: url(images/portfolio-2.jpg);">
+								<div class="portfolio-entry codepen" data-height="300px" data-theme-id="dark" data-default-tab="result" data-user="nnra" data-slug-hash="rNarNYV" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Piano Variation">	
+																			
 									<div class="desc">
-										<p>Project 2</p>
+										<p>Piano input + magenta.js</p>
 									</div>
 								</div>
 								<div class="portfolio-text text-center">
-									<h3>Project 2</h3>
+									<h3>Piano Variation</h3>
 									<ul class="stuff">
-										<li><i class="icon-heart2"></i>200</li>
-										<li><i class="icon-eye2"></i>248</li>
-										<li><i class="icon-download"></i>240</li>
+										<li onclick="window.open('https://codepen.io/nnra/pen/rNarNYV')"><i class="icon-eye2"></i>View</li>
+										<li><i class="icon-download"></i>Download</li>
 									</ul>
 								</div> 
 							</a>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-6">
 						<div class="fh5co-portfolio animate-box">
 							<a href="#">
-								<div class="portfolio-entry" style="background-image: url(images/portfolio-9.jpg);">
+								<div class="portfolio-entry" id="open-popup" style="background-image: url(https://i.imgur.com/FOsV622.png);">
 									<div class="desc">
-										<p>Project 3</p>
+										<p>Food recommendation App(School Project)</p>
 									</div>
 								</div>
 								<div class="portfolio-text text-center">
-									<h3>Project 3</h3>
+									<h3>SMart</h3>
 									<ul class="stuff">
-										<li><i class="icon-heart2"></i>200</li>
-										<li><i class="icon-eye2"></i>248</li>
-										<li><i class="icon-download"></i>240</li>
+										<li><i class="icon-eye2"></i>View</li>
+										<li id="open-popup"><i class="icon-download" ></i>Download</li>
+									</ul>
+								</div> 
+							</a>
+						</div>
+					</div>
+					<script>
+						//popup box
+						$('#open-popup').magnificPopup({
+							items: [
+							{
+								src: 'https://drive.google.com/file/d/1f6MyOAdsb9TdEuJANVLirV0uf2ldGJi_/preview',
+								type: 'iframe' // this overrides default type
+							},
+							],
+							gallery: {
+							    enabled: true
+							},
+							type: 'image' // this is a default type
+						});
+					</script>
+					<div class="col-md-6">
+						<div class="fh5co-portfolio animate-box">
+							<a href="#">
+								<div class="portfolio-entry">
+									<iframe width="100%" height="100%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/726106582&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+								</div>
+							<div class="portfolio-text text-center">
+									<h3>🎵hope</h3>
+									<ul class="stuff">
+										<li><i class="icon-eye2"></i>View</li>
+										<li><i class="icon-download"></i>Download</li>
 									</ul>
 								</div> 
 							</a>
@@ -274,6 +301,7 @@
 		-->	
 
 	</section>
+<!--
 	<section id="fh5co-testimony" data-section="testimony">
 		<div class="container">
 			<div class="row">
@@ -318,7 +346,7 @@
 			</div>
 		</div>
 	</section>
-	
+-->	
 	<section id="fh5co-pricing" data-section="pricing">
 		<section class="pricing-section bg-3">
       	<div class="container">
@@ -370,7 +398,7 @@
 	                        <li class="pricing__feature">Piano</li>
 	                        <li class="pricing__feature">Guitar</li>
 	                        <li class="pricing__feature">Guzheng</li>
-	                        <li class="pricing__feature">Compose</li>
+	                        <li class="pricing__feature">Flute</li>
 	                    </ul>
 	                    <!--<p><a href="#" class="btn btn-primary btn-lg pricing__action">Read More</a></p>-->
 	                </div>
@@ -383,13 +411,13 @@
 	<div id="fh5co-footer" role="contentinfo">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4 animate-box">
+				<div class="col-md-6 animate-box">
 					<h3 class="section-title">My mission</h3>
 					<p>Change the way people composing, searching and enjoying music. Make the world better with the power of Music and Technology. Empower people under all kinds of situations.</p>
 					
 				</div>
 
-				<div class="col-md-4 animate-box">
+				<div class="col-md-6 animate-box">
 					<h3 class="section-title">My Contact</h3>
 					<ul class="contact-info">
 						<!--<li><i class="icon-map"></i>Taiwan</li>-->
@@ -397,6 +425,7 @@
 						<li><i class="icon-envelope"></i><a href="#">nura721@gmail.com</a></li>
 						<li><i class="icon-globe"></i><a href="#">https://github.com/Nnra</a></li>
 					</ul>
+<!--					
 					<h3 class="section-title">Others</h3>
 					<ul class="social-media">
 						<li><a href="#" class="facebook"><i class="icon-facebook"></i></a></li>
@@ -404,6 +433,9 @@
 						<li><a href="#" class="dribbble"><i class="icon-dribbble"></i></a></li>
 						<li><a href="#" class="github"><i class="icon-github-alt"></i></a></li>
 					</ul>
+-->					
+
+
 				</div>
 			</div>
 		</div>
